@@ -1,0 +1,19 @@
+{
+  "ac_apps": { "paths": [ "apps/*", "extension/internal/*" ] },
+  "ac_ffb_postprocess": { "paths": [ "extension/lua/ffb-postprocess/*" ] },
+  "ac_chaser_camera": { "paths": [ "extension/lua/chaser-camera/*" ] },
+  "ac_cockpit_camera": { "paths": [ "extension/lua/cockpit-camera/*" ] },
+  "ac_joypad_assist": { "paths": [ "extension/lua/joypad-assist/*", "extension/lua/mouse-steering/*" ] },
+  "ac_new_modes": { "paths": [ "extension/lua/new-modes/*" ] },
+  "ac_pfx_fireworks": { "paths": [ "extension/lua/fireworks/*" ] },
+  "ac_pp_filters": { "paths": [ "extension/lua/pp-filters/*" ] },
+  "ac_splashscreen": { "paths": [ "extension/lua/loading-screen/*" ] },
+  "ac_tfx": { "paths": [ "extension/lua/tfx/*" ] },
+  "ac_tools": { "paths": [ "extension/lua/tools/*" ] },
+  "ac_track_script": { "paths": [ "content/tracks/*", "extension/config/tracks/*", "extension/lua/tracks/*" ], "withoutIO": true },
+  "ac_online_script": { "paths": [ "extension/lua/online/*" ] },
+  "ac_wfx_controller": { "paths": [ "extension/weather-controllers/*" ] },
+  "ac_wfx_impl": { "paths": [ "extension/weather/*" ] },
+  "ac_car_cphys": { "paths": [ "content/cars/*/data*" ], "withoutIO": true },
+  "ac_car_scriptable_display": { "paths": [ "content/cars/*/extension*", "extension/config/cars/*", "extension/lua/cars/*" ], "withoutIO": true }
+}
