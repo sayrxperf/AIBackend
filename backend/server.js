@@ -7,7 +7,15 @@ const chatsRouter = require('./routes/chats');
 
 const app = express();
 
-app.use(cors());
+// Update CORS to allow Vercel domain
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://your-vercel-app.vercel.app'  // ← Add your Vercel URL here
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use('/api/auth', authRouter);
@@ -17,8 +25,8 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK' });
 });
 
-const PORT = process.env.BACKEND_PORT || 5001;  // ← Changed this
+const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
